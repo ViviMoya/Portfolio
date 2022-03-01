@@ -22,10 +22,11 @@ import './theme/variables.css';
 
 import Menu from './components/Menu';
 import { Route } from 'react-router';
-import { ROUTE_ABOUT_ME, ROUTE_PROJECTS, ROUTE_SKILLS } from './utils/routes';
+import { ROUTE_ABOUT_ME, ROUTE_CONTACT, ROUTE_PROJECTS, ROUTE_SKILLS } from './utils/routes';
 import AboutMe from './pages/AboutMe';
 import Projects from './pages/Projects';
 import Skills from './pages/Skills';
+import Contact from './pages/Contact';
 
 
 
@@ -40,6 +41,7 @@ const App: React.FC = () => {
   <Route exact path={ROUTE_ABOUT_ME} component={AboutMe} />
   <Route exact path={ROUTE_PROJECTS} component={Projects} />
   <Route exact path={ROUTE_SKILLS} component={Skills} />
+  <Route exact path={ROUTE_CONTACT} component={Contact} />
   </IonRouterOutlet>
       </IonReactRouter>
     </IonApp>

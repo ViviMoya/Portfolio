@@ -13,7 +13,7 @@ import {
   IonToolbar,
 } from "@ionic/react";
 import { options } from "ionicons/icons";
-import { ROUTE_ABOUT_ME, ROUTE_PROJECTS, ROUTE_SKILLS } from "../utils/routes";
+import { ROUTE_ABOUT_ME, ROUTE_CONTACT, ROUTE_PROJECTS, ROUTE_SKILLS } from "../utils/routes";
 
 const Menu: React.FC = () => {
   return (
@@ -46,7 +46,7 @@ const Menu: React.FC = () => {
             </IonItem>
           </IonMenuToggle>
           <IonMenuToggle>
-            <IonItem button routerLink="/" routerDirection="none">
+            <IonItem button routerLink={ROUTE_CONTACT}>
               <IonIcon slot="start" icon={options} />
               <IonLabel>Let's talk</IonLabel>
             </IonItem>
