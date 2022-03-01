@@ -22,8 +22,9 @@ import './theme/variables.css';
 
 import Menu from './components/Menu';
 import { Route } from 'react-router';
-import { ROUTE_ABOUT_ME } from './utils/routes';
+import { ROUTE_ABOUT_ME, ROUTE_PROJECTS } from './utils/routes';
 import AboutMe from './pages/AboutMe';
+import Projects from './pages/Projects';
 
 
 
@@ -36,7 +37,7 @@ const App: React.FC = () => {
   <Menu />
   <IonRouterOutlet id="main">
   <Route exact path={ROUTE_ABOUT_ME} component={AboutMe} />
-
+  <Route exact path={ROUTE_PROJECTS} component={Projects} />
   </IonRouterOutlet>
       </IonReactRouter>
     </IonApp>

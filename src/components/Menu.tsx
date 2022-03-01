@@ -13,7 +13,7 @@ import {
   IonToolbar,
 } from "@ionic/react";
 import { options } from "ionicons/icons";
-import { ROUTE_ABOUT_ME } from "../utils/routes";
+import { ROUTE_ABOUT_ME, ROUTE_PROJECTS } from "../utils/routes";
 
 const Menu: React.FC = () => {
   return (
@@ -40,7 +40,7 @@ const Menu: React.FC = () => {
             </IonItem>
           </IonMenuToggle>
           <IonMenuToggle>
-            <IonItem button routerLink="/" routerDirection="none">
+            <IonItem button routerLink={ROUTE_PROJECTS}>
               <IonIcon slot="start" icon={options} />
               <IonLabel>Projects</IonLabel>
             </IonItem>
