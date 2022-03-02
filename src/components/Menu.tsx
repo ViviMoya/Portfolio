@@ -3,7 +3,6 @@ import {
   IonContent,
   IonHeader,
   IonIcon,
-  IonImg,
   IonItem,
   IonLabel,
   IonList,
@@ -12,7 +11,7 @@ import {
   IonTitle,
   IonToolbar,
 } from "@ionic/react";
-import { fingerPrintOutline, folderOpenOutline, mailOpenOutline, options, ribbonOutline, } from "ionicons/icons";
+import { fingerPrintOutline, folderOpenOutline, mailOpenOutline, ribbonOutline, } from "ionicons/icons";
 import { ROUTE_ABOUT_ME, ROUTE_CONTACT, ROUTE_PROJECTS, ROUTE_SKILLS } from "../utils/routes";
 
 const Menu: React.FC = () => {
