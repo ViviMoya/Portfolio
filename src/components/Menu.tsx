@@ -12,7 +12,7 @@ import {
   IonTitle,
   IonToolbar,
 } from "@ionic/react";
-import { options } from "ionicons/icons";
+import { fingerPrintOutline, folderOpenOutline, mailOpenOutline, options, ribbonOutline, } from "ionicons/icons";
 import { ROUTE_ABOUT_ME, ROUTE_CONTACT, ROUTE_PROJECTS, ROUTE_SKILLS } from "../utils/routes";
 
 const Menu: React.FC = () => {
@@ -29,25 +29,25 @@ const Menu: React.FC = () => {
         <IonList className="items" lines="none" mode="ios">
           <IonMenuToggle>
             <IonItem button routerLink={ROUTE_ABOUT_ME}>
-              <IonImg src="../images/icon8-brave.svg" />
+            <IonIcon slot="start" icon={fingerPrintOutline} />
               <IonLabel> About Me</IonLabel>
             </IonItem>
           </IonMenuToggle>
           <IonMenuToggle>
             <IonItem button routerLink={ROUTE_SKILLS}>
-              <IonIcon slot="start" icon={options} />
+              <IonIcon slot="start" icon={ribbonOutline} />
               <IonLabel>Skills</IonLabel>
             </IonItem>
           </IonMenuToggle>
           <IonMenuToggle>
             <IonItem button routerLink={ROUTE_PROJECTS}>
-              <IonIcon slot="start" icon={options} />
+              <IonIcon slot="start" icon={folderOpenOutline} />
               <IonLabel>Projects</IonLabel>
             </IonItem>
           </IonMenuToggle>
           <IonMenuToggle>
             <IonItem button routerLink={ROUTE_CONTACT}>
-              <IonIcon slot="start" icon={options} />
+              <IonIcon slot="start" icon={mailOpenOutline} />
               <IonLabel>Let's talk</IonLabel>
             </IonItem>
           </IonMenuToggle>
